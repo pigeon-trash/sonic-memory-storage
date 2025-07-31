@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta property="og:title" content="Sonic Memory Storage" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://sonic-memory-storage.glitch.me" />
+    <meta
+      property="og:description"
+      content="A digital shrine for audio and visual memories"
+    />
+    <title>sonic memory storage</title>
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/favicon.png"
+      type="image/png"
+    />
+  </head>
+</html>
+<style>
+  body {
+    width: 6000px;
+    height: 4000px;
+    /*     background-color: black; */
+    background-image: url(https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/moss.gif?v=1729111540740);
+  }
+
+  img {
+    width: 600px;
+    position: absolute;
+  }
+
+  h3 {
+    font-family: "Times New Roman";
+    background-color: yellow;
+    color: red;
+  }
+
+  .header {
+    color: lavender;
+    font-family: "Arial";
+    background-color: Magenta;
+  }
+  .text {
+    color: lime;
+    font-family: "Arial Narrow";
+    background-color: blue;
+  }
+
+  marquee {
+    font-size: 150px;
+    color: yellow;
+    font-family: cursive;
+    font-size: 150px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 300px;
+  }
+
+  /* Rotating image CSS */
+  @keyframes rotateImage {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .rotating {
+    animation: rotateImage 5s linear infinite;
+    width: 200px; /* Adjust size if needed */
+  }
+
+  /* Hide the image initially */
+  #triggeredImage {
+    display: none;
+    position: absolute;
+    width: 500px;
+    top: 3500px;
+    left: 4500px;
+  }
+  /* Button style */
+  button {
+    /*             padding: 15px 30px; */
+    font-size: 18px;
+    color: white;
+    background-color: blue;
+    font-family: "Arial Narrow";
+    border: none;
+    /*             border-radius: 12px; */
+    cursor: pointer;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+</style>
+
+<body>
+  <!-- TYPOGRAPHY -->
+  <div style="z-index: 10">
+    <h1 class="header" style="position: absolute; top: 100px; left: 200px">
+      the sweetest moments are fleeting and remind me of life's temporality
+    </h1>
+
+    <h2 class="text" style="position: absolute; top: 1000px; left: 1000px">
+      there i was remembering to savor every sound
+    </h2>
+
+    <!-- Rotating image added here -->
+    <img
+      class="rotating"
+      style="position: absolute; top: 3500px; left: 1000px"
+      src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/baby-mo.jpg?v=1729188016820"
+    />
+
+    <marquee
+      style="position: absolute; top: 450px; width: 6000px"
+      direction="right"
+      scrollamount="15"
+    >
+      Tenderness awaits
+    </marquee>
+
+    <marquee
+      style="position: absolute; top: 2900px; width: 6000px; color: lime"
+      direction="left"
+      scrollamount="25"
+    >
+      <span
+        style="
+          background-image: url(https://gifdb.com/images/high/river-forest-water-flowing-716ks5aop5xk5jpb.gif);
+          background-size: repeat;
+          padding: 10px;
+        "
+      >
+        What are the odds birds have intergenerational trauma? fuck a sonnet I
+        want infinite karaokes where we’re fluttering around in our own little
+        world.
+      </span>
+    </marquee>
+
+    <img
+      style="position: absolute; top: 3900px; width: 450px; left: 5000px"
+      src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/screenshot-edit-thumbs%20up!.png?v=1729190225095"
+    />
+
+    <img
+      style="position: absolute; top: 3915px; width: 450px; left: 4990px"
+      src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/screenshot-edit-thumbs%20up!.png?v=1729190225095"
+    />
+  </div>
+
+  <!-- Leave a memory comment form -->
+  <!-- <form action="comment_section.php" method="POST">
+  <div>
+    <input
+      type="text"
+      id="comment"
+      name="comment"
+      placeholder="Leave a memory here"
+      required
+    />
+  </div>
+  <input type="submit" value="Submit" />
+</form>
+ -->
+  <!-- Anchored image on right corner -->
+
+  <marquee
+    class="text"
+    style="
+      position: absolute;
+      line-height: 150px;
+      width: 700px;
+      height: 1000px;
+      top: 800px;
+      left: 4000px;
+      color: yellow;
+      background-image: url(https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/000001090028.jpg?v=1729212920788);
+      background-size: 100%;
+    "
+    direction="up"
+    speed="30"
+  >
+    Softness is everywhere memory exists. <i> Welcome memory with a warm embrace, like an old friend. </i>
+  </marquee>
+
+  <img
+    style="position: fixed; width: 100px; top: 0px; right: 0px"
+    src="https://usercontent.one/wp/www.theappealoftheunreal.com/wp-content/uploads/2020/05/RotatingTree_1.gif"
+  />
+
+  <!--compact CD gif-->
+  <img
+    style="
+      position: absolute;
+      width: 100px;
+      top: 3570px;
+      right: 35px;
+      z-index: 10;
+    "
+    src="https://www.gifservice.fr/img/gif-vignette-small/6c06c0659baf2079e24d19f50d96ca4a/49349-multi-media-sound-icons-compact-disc-digital-audio.gif"
+  />
+  <!-- limewire gif -->
+  <img
+    style="position: absolute; width: 400px; top: 2000px; right: 50vw"
+    src="https://i.gifer.com/1Z1w.gif"
+  />
+  <iframe
+    width="315"
+    height="315"
+    src="https://www.youtube.com/embed/8ob0J3gi6b8?si=yr9VZ-mehVaeZ_ZD&loop=1&playlist=8ob0J3gi6b8"
+    title="YouTube video player"
+    frameborder="2"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+    style="position: absolute; top: 3600px; right: 45px"
+  ></iframe>
+  <h2
+    class="text"
+    style="
+      position: absolute;
+      top: 3950px;
+      right: 45px;
+      color: black;
+      background-color: aqua;
+    "
+  >
+    A song i've been listening to on repeat
+  </h2>
+
+  <h2
+    class="text"
+    style="
+      position: absolute;
+      width: 400px;
+      top: 3850px;
+      left: 600px;
+      color: white;
+      background-color: red;
+    "
+  >
+    this is the sound of floating memories! how romantic! brb i must float with
+    them (~˘▾˘)~
+  </h2>
+
+  <!-- Button to trigger the image -->
+  <button
+    onclick="showImage()"
+    style="position: absolute; width: 100px; top: 3500px; left: 4500px"
+  >
+    Press Me
+  </button>
+
+  <!-- Image that will be triggered -->
+  <img
+    id="triggeredImage"
+    style="width: 500px"
+    src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/ascii-portrait.png?v=1729191471306"
+    alt="ASCII Portrait"
+  />
+
+  <script>
+    function showImage() {
+      // Show the hidden image when the button is clicked
+      document.getElementById("triggeredImage").style.display = "block";
+    }
+  </script>
+
+  <div style="position: absolute; top: 1500px">
+    <!-- Mo gif-->
+    <img
+      style="left: 2000px; width: 1000px"
+      src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/heart%20(1).gif?v=1729143210658"
+    />
+    <h3 style="width: 300px; position: absolute; left: 2050px">
+      [ Hi, it's Mo live coding this page :-3 ]
+    </h3>
+    <!--  "i want to be a tree"  -->
+    <img
+      style="width: 400px; top: 150px; left: 1350px"
+      src="https://d2w9rnfcy7mm78.cloudfront.net/17686669/original_398eaea574b0e2a320b82202ee83c4d2.png?1661038700?bc=0"
+    />
+    <!--  mariah carey  -->
+    <img
+      style="width: 200px; top: 1600px; left: 3500px"
+      src="https://i.imgur.com/ErXSBYV.gif"
+    />
+
+    <!--  Bird flying gif  -->
+    <img
+      style="width: 500px; top: 1350px; left: 100px"
+      src="https://d2w9rnfcy7mm78.cloudfront.net/11618695/original_9dedce6edc4fb7f59296f232cda6ed6d.gif?1618632448"
+    />
+  </div>
+
+  <div>
+    <!-- Beach Breeze Audio -->
+    <audio controls style="position: absolute; top: 1600px; left: 150px">
+      <source
+        src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/beach_br33ze.m4a"
+        type="audio/mp4"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!--Claire de lune-->
+    <audio controls style="position: absolute; top: 360px; left: 1500px">
+      <source
+        src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/piano-%40-the-function_02.m4a"
+        type="audio/mp4"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Stone -->
+    <audio controls style="position: absolute; top: 3875px; left: 2700px">
+      <source
+        src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/stone_edit.mp3"
+        type="audio/mp3"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!--Fast food bell -->
+    <audio controls style="position: absolute; top: 1450px; left: 590px">
+      <source
+        src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/fast_food_bell_edit.mp3"
+        type="audio/mp3"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!--crowded sushi restaurant -->
+    <audio controls style="position: absolute; top: 500px; left: 3500px">
+      <source
+        src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/Crowded_sushi_restaurant.m4a"
+        type="audio/mp4"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!--chinese restaurant-->
+    <audio controls style="position: absolute; top: 787px; left: 4500px">
+      <source
+        src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/chinese_restaurant.m4a"
+        type="audio/mp4"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!--bird chirps-->
+    <audio controls style="position: absolute; top: 1000px; left: 2678px">
+      <source
+        src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/Bird_chirps.m4a"
+        type="audio/mp4"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!--sweet sweet fantasy baby-->
+    <audio controls style="position: absolute; top: 3250px; left: 3600px">
+      <source
+        src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/sweet%20sweet%20fantasy%20baby.m4a"
+        type="audio/mp4"
+      />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</body>
