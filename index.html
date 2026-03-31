@@ -27,7 +27,6 @@
       href="https://raw.githubusercontent.com/mojabasura/sonic-memory-storage/main/images/favicon.gif"
     />
 
-    <!-- STYLES -->
     <style>
       body {
         width: 6000px;
@@ -38,7 +37,6 @@
       }
 
       img {
-        width: 600px;
         position: absolute;
       }
 
@@ -61,18 +59,20 @@
       }
 
       marquee {
-        font-size: 150px;
-        color: yellow;
         font-family: cursive;
+        font-size: 150px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
         line-height: 300px;
         position: absolute;
       }
 
       @keyframes rotateImage {
-        from {
+        0% {
           transform: rotate(0deg);
         }
-        to {
+        100% {
           transform: rotate(360deg);
         }
       }
@@ -104,8 +104,8 @@
   </head>
 
   <body>
-    <!-- TYPOGRAPHY -->
     <div style="z-index: 10">
+      <!-- Header & text -->
       <h1 class="header" style="position: absolute; top: 100px; left: 200px">
         the sweetest moments are fleeting and remind me of life's temporality
       </h1>
@@ -117,24 +117,28 @@
       <!-- Rotating image -->
       <img
         class="rotating"
-        style="top: 3500px; left: 1000px"
-        src="https://raw.githubusercontent.com/mojabasura/sonic-memory-storage/main/images/baby-mo.jpg"
+        style="position: absolute; top: 3500px; left: 1000px"
+        src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/baby-mo.jpg?v=1729188016820"
       />
 
-      <!-- Marquee top -->
-      <marquee style="top: 450px; width: 6000px" direction="right" scrollamount="15">
+      <!-- Marquees -->
+      <marquee
+        style="position: absolute; top: 450px; width: 6000px"
+        direction="right"
+        scrollamount="15"
+      >
         Tenderness awaits
       </marquee>
 
-      <!-- Marquee middle -->
       <marquee
-        style="top: 2900px; width: 6000px; color: lime"
+        style="position: absolute; top: 2900px; width: 6000px; color: lime"
         direction="left"
         scrollamount="25"
       >
         <span
           style="
             background-image: url(https://gifdb.com/images/high/river-forest-water-flowing-716ks5aop5xk5jpb.gif);
+            background-size: repeat;
             padding: 10px;
           "
         >
@@ -144,14 +148,14 @@
         </span>
       </marquee>
 
-      <!-- Double image -->
+      <!-- Static images -->
       <img
-        style="top: 3900px; width: 450px; left: 5000px"
-        src="https://raw.githubusercontent.com/mojabasura/sonic-memory-storage/main/images/selfie-thumb.png"
+        style="position: absolute; top: 3900px; width: 450px; left: 5000px"
+        src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/screenshot-edit-thumbs%20up!.png?v=1729190225095"
       />
 
       <img
-        style="top: 3915px; width: 450px; left: 4990px"
+        style="position: absolute; top: 3915px; width: 450px; left: 4990px"
         src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/screenshot-edit-thumbs%20up!.png?v=1729190225095"
       />
     </div>
@@ -160,71 +164,80 @@
     <marquee
       class="text"
       style="
+        position: absolute;
         line-height: 150px;
         width: 700px;
         height: 1000px;
         top: 800px;
         left: 4000px;
         color: yellow;
-        background-image: url(https://raw.githubusercontent.com/mojabasura/sonic-memory-storage/main/images/car.JPG);
+        background-image: url(https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/000001090028.jpg?v=1729212920788);
         background-size: 100%;
       "
       direction="up"
+      scrollamount="30"
     >
-      Softness is everywhere memory exists.
-      <i>Welcome memory with a warm embrace, like an old friend.</i>
+      Softness is everywhere memory exists. <i> Welcome memory with a warm embrace, like an old friend. </i>
     </marquee>
 
     <!-- Fixed corner gif -->
     <img
-      style="position: fixed; width: 100px; top: 0; right: 0"
+      style="position: fixed; width: 100px; top: 0px; right: 0px"
       src="https://usercontent.one/wp/www.theappealoftheunreal.com/wp-content/uploads/2020/05/RotatingTree_1.gif"
     />
 
-    <!-- CD gif -->
+    <!-- Compact CD gif -->
     <img
-      style="width: 100px; top: 3570px; right: 35px; z-index: 10"
+      style="position: absolute; width: 100px; top: 3570px; right: 35px; z-index: 10"
       src="https://www.gifservice.fr/img/gif-vignette-small/6c06c0659baf2079e24d19f50d96ca4a/49349-multi-media-sound-icons-compact-disc-digital-audio.gif"
     />
 
     <!-- Limewire gif -->
     <img
-      style="width: 400px; top: 2000px; right: 50vw"
+      style="position: absolute; width: 400px; top: 2000px; right: 50vw"
       src="https://i.gifer.com/1Z1w.gif"
     />
 
-    <!-- YouTube -->
+    <!-- YouTube iframe -->
     <iframe
       width="315"
       height="315"
-      src="https://www.youtube.com/embed/8ob0J3gi6b8?loop=1&playlist=8ob0J3gi6b8"
+      src="https://www.youtube.com/embed/8ob0J3gi6b8?si=yr9VZ-mehVaeZ_ZD&loop=1&playlist=8ob0J3gi6b8"
+      title="YouTube video player"
+      frameborder="2"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen
       style="position: absolute; top: 3600px; right: 45px"
     ></iframe>
 
     <h2
       class="text"
-      style="top: 3950px; right: 45px; color: black; background-color: aqua"
+      style="position: absolute; top: 3950px; right: 45px; color: black; background-color: aqua"
     >
       A song i've been listening to on repeat
     </h2>
 
     <h2
       class="text"
-      style="width: 400px; top: 3850px; left: 600px; color: white; background-color: red"
+      style="position: absolute; width: 400px; top: 3850px; left: 600px; color: white; background-color: red"
     >
       this is the sound of floating memories! how romantic! brb i must float with
       them (~˘▾˘)~
     </h2>
 
-    <!-- Button -->
-    <button onclick="showImage()" style="top: 3500px; left: 4500px">
+    <!-- Button to trigger image -->
+    <button
+      onclick="showImage()"
+      style="position: absolute; width: 100px; top: 3500px; left: 4500px"
+    >
       Press Me
     </button>
 
-    <!-- Triggered Image -->
+    <!-- Hidden triggered image -->
     <img
       id="triggeredImage"
+      style="position: absolute; width: 500px; top: 3500px; left: 4500px"
       src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/ascii-portrait.png?v=1729191471306"
       alt="ASCII Portrait"
     />
@@ -232,66 +245,86 @@
     <!-- Mo section -->
     <div style="position: absolute; top: 1500px">
       <img
-        style="left: 2000px; width: 1000px"
-        src="https://raw.githubusercontent.com/mojabasura/sonic-memory-storage/main/images/heart.gif"
+        style="position: absolute; left: 2000px; width: 1000px"
+        src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/heart%20(1).gif?v=1729143210658"
       />
-
-      <h3 style="width: 300px; left: 2050px">
+      <h3 style="position: absolute; width: 300px; left: 2050px">
         [ Hi, it's Mo live coding this page :-3 ]
       </h3>
-
       <img
-        style="width: 400px; top: 150px; left: 1350px"
+        style="position: absolute; width: 400px; top: 150px; left: 1350px"
         src="https://d2w9rnfcy7mm78.cloudfront.net/17686669/original_398eaea574b0e2a320b82202ee83c4d2.png?1661038700?bc=0"
       />
-
       <img
-        style="width: 200px; top: 1600px; left: 3500px"
+        style="position: absolute; width: 200px; top: 1600px; left: 3500px"
         src="https://i.imgur.com/ErXSBYV.gif"
       />
-
       <img
-        style="width: 500px; top: 1350px; left: 100px"
+        style="position: absolute; width: 500px; top: 1350px; left: 100px"
         src="https://d2w9rnfcy7mm78.cloudfront.net/11618695/original_9dedce6edc4fb7f59296f232cda6ed6d.gif?1618632448"
       />
     </div>
 
-    <!-- AUDIO -->
+    <!-- Audio elements -->
     <div>
-      <audio controls style="top: 1600px; left: 150px">
-        <source src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/beach_br33ze.m4a" />
+      <audio controls style="position: absolute; top: 1600px; left: 150px">
+        <source
+          src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/beach_br33ze.m4a"
+          type="audio/mp4"
+        />
       </audio>
 
-      <audio controls style="top: 360px; left: 1500px">
-        <source src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/piano-%40-the-function_02.m4a" />
+      <audio controls style="position: absolute; top: 360px; left: 1500px">
+        <source
+          src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/piano-%40-the-function_02.m4a"
+          type="audio/mp4"
+        />
       </audio>
 
-      <audio controls style="top: 3875px; left: 2700px">
-        <source src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/stone_edit.mp3" />
+      <audio controls style="position: absolute; top: 3875px; left: 2700px">
+        <source
+          src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/stone_edit.mp3"
+          type="audio/mp3"
+        />
       </audio>
 
-      <audio controls style="top: 1450px; left: 590px">
-        <source src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/fast_food_bell_edit.mp3" />
+      <audio controls style="position: absolute; top: 1450px; left: 590px">
+        <source
+          src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/fast_food_bell_edit.mp3"
+          type="audio/mp3"
+        />
       </audio>
 
-      <audio controls style="top: 500px; left: 3500px">
-        <source src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/Crowded_sushi_restaurant.m4a" />
+      <audio controls style="position: absolute; top: 500px; left: 3500px">
+        <source
+          src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/Crowded_sushi_restaurant.m4a"
+          type="audio/mp4"
+        />
       </audio>
 
-      <audio controls style="top: 787px; left: 4500px">
-        <source src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/chinese_restaurant.m4a" />
+      <audio controls style="position: absolute; top: 787px; left: 4500px">
+        <source
+          src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/chinese_restaurant.m4a"
+          type="audio/mp4"
+        />
       </audio>
 
-      <audio controls style="top: 1000px; left: 2678px">
-        <source src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/Bird_chirps.m4a" />
+      <audio controls style="position: absolute; top: 1000px; left: 2678px">
+        <source
+          src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/Bird_chirps.m4a"
+          type="audio/mp4"
+        />
       </audio>
 
-      <audio controls style="top: 3250px; left: 3600px">
-        <source src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/sweet%20sweet%20fantasy%20baby.m4a" />
+      <audio controls style="position: absolute; top: 3250px; left: 3600px">
+        <source
+          src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/sweet%20sweet%20fantasy%20baby.m4a"
+          type="audio/mp4"
+        />
       </audio>
     </div>
 
-    <!-- SCRIPT -->
+    <!-- JS -->
     <script>
       function showImage() {
         document.getElementById("triggeredImage").style.display = "block";
